@@ -1,6 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/**
+ * Main class
+ */
+
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+
+/**
+ * This function return the sum of two numbers
+ * @param {number} a - first number
+ * @param {number} b - second number
+ * @returns {number} - sum results of a + b
+ */
+function sum(a, b) {
+  return a + b;
+}
+
 
 function App() {
   return (
