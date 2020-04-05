@@ -1,39 +1,23 @@
-/**
- * Main class
- */
-
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
-/**
- * This function return the sum of two numbers
- * @param {number} a - first number
- * @param {number} b - second number
- * @returns {number} - sum results of a + b
- */
-function sum(a, b) {
-  return a + b;
-}
+import Container from "@material-ui/core/Container";
 
+import DiseaseList from "./components/DiseaseList/index";
+import Header from "./components/core/Header/index";
+import Footer from "./components/core/Footer/index";
+
+// So por questão de teste
+const DATA = require("./bula.json");
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Container fixed>
+        <DiseaseList data={DATA} />
+      </Container>
+      <Footer footerText="Made with &hearts; by Ítalo O Costa" />
     </div>
   );
 }

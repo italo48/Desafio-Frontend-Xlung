@@ -1,0 +1,42 @@
+[
+  {
+    "id": "A00",
+    "descricao": "Cólera"
+  },
+  {
+    "id": "A01",
+    "descricao": "Febres tifóide e paratifóide"
+  },
+  {
+    "id": "A03",
+    "descricao": "Shiguelose"
+  },
+  {
+    "id": "A02",
+    "descricao": "Outras infecções por Salmonella"
+  },
+  {
+    "id": "A05",
+    "descricao": "Outras intoxicações alimentares bacterianas"
+  },
+  {
+    "id": "A04",
+    "descricao": "Outras infecções intestinais bacterianas"
+  },
+  {
+    "id": "A06",
+    "descricao": "Amebíase"
+  },
+  {
+    "id": "A08",
+    "descricao": "Infecções intestinais virais"
+  },
+  {
+    "id": "A07",
+    "descricao": "Outras doenças intestinais por protozoários"
+  },
+  {
+    "id": "A15",
+    "descricao": "Tuberculose respiratória"
+  }
+]
