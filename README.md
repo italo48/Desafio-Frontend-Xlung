@@ -7,11 +7,12 @@
 - Jest
 - Material UI
 - Redux
-- JSDoc
-- Estrutura de pastas feita com base neste post [aqui](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1)
-- Avaliação de performace com React Dev Tools e Modo Desenvolvedor do Firefox
 
-## Diferenciais
+## Sobre a aplicação
 
-- Docker
-- Mongodb
+A aplicação mostra uma lista de grupos de doenças.
+
+## Funcionalidades
+
+- Listar grupos de doenças 
+- Após selecionar uma, essa é mostrada no topo da lista (Para demonstrar o uso do Redux)
