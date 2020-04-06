@@ -1,4 +1,5 @@
 import React from "react";
+import { connect, useSelector, useDispatch } from "react-redux";
 import List from "@material-ui/core/List";
 import "./DiseaseList.css";
 
@@ -7,14 +8,19 @@ import Disease from "../Disease/index";
 function DiseaseList(props) {
   const { data } = props;
 
+  const ui = useSelector((disease) => disease.ui);
+  const disp = useDispatch;
+
   return (
     <div className="DiseaseList">
-      <h1 className="DiseaseList-listTitle">Lista de doenças</h1>
+      <p>
+        <span>{ui || "Selecione uma doença"}</span>
+      </p>
       {data ? (
         <div>
           <List component="nav" aria-label="main mailbox folders">
             {data.map((el) => (
-              <Disease id={el.id} descricao={el.descricao} />
+              <Disease key={el.id} id={el.id} descricao={el.descricao} />
             ))}
           </List>
         </div>
@@ -25,4 +31,8 @@ function DiseaseList(props) {
   );
 }
 
-export default DiseaseList;
+const mapStateToProps = (store) => ({
+  disease: store.clickState.disease,
+});
+
+export default connect(mapStateToProps)(DiseaseList);
